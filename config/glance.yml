@@ -1,0 +1,18 @@
+
+server:
+  assets-path: /app/assets
+
+theme:
+  # Note: assets are cached by the browser, changes to the CSS file
+  # will not be reflected until the browser cache is cleared (Ctrl+F5)
+  custom-css-file: /assets/user.css
+
+pages:
+  # It's not necessary to create a new file for each page and include it, you can simply
+  # put its contents here, though multiple pages are easier to manage when separated
+  # Extra note by me, brayden:
+  # The finance.yml page is configured to display visuals from a running instance of the pyNance Dashroad
+  # They will be blank if one is not running
+  !include: startpage.yml
+  !include: finance.yml
+
