@@ -1,0 +1,70 @@
+
+- name: Finance
+  pages:
+  columns:
+    - size: small
+      widgets:
+        - type: calendar
+          first-day-of-week: monday
+
+        - type: rss
+          limit: 8
+          collapse-after: 3
+          cache: 6h
+          feeds:
+            - url: https://selfh.st/rss/
+              title: selfh.st
+            - url: https://ciechanow.ski/atom.xml
+              title: Bartosz Ciechanowski
+            - url: https://www.joshwcomeau.com/rss.xml
+              title: Josh Comeau
+            - url: https://samwho.dev/rss.xml
+              title: SamWho
+            - url: https://ishadeed.com/feed.xml
+              title: Ahmad Shadeed
+            - url: https://feeds.arstechnica.com/arstechnica/index/
+              title: Ars Technica
+            - url: https://hnrss.org/frontpage
+              title: Hacker News
+            - url: https://lobste.rs/rss
+              title: Lobsters
+
+    - size: full
+      widgets:
+        - type: iframe
+          source: "http://localhost:3353/static/mtd_net.html"
+          height: 500
+
+        - type: iframe
+          source: "http://localhost:3353/static/assets_vs_liabilities.html"
+          height: 400
+
+        - type: iframe
+          source: "http://localhost:3353/static/category_breakdown.html"
+          height: 400
+
+        - type: iframe
+          source: "http://localhost:3353/static/other_custom_finance_widget.html"
+          height: 400
+
+        - type: markets
+          markets:
+            - symbol: spy
+              name: S&P 500
+            - symbol: btc-usd
+              name: Bitcoin
+            - symbol: nvda
+              name: Nvidia
+            - symbol: aapl
+              name: Apple
+            - symbol: msft
+              name: Microsoft
+
+        - type: releases
+          cache: 1d
+          repositories:
+            - glanceapp/glance
+            - go-gitea/gitea
+            - immich-app/immich
+            - syncthing/syncthing
+
