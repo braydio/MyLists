@@ -1,4 +1,3 @@
-
 - name: Startpage
   width: slim
   center-vertically: true
@@ -13,41 +12,38 @@
           title: Services
           sites:
             - title: Jellyfin
-              url: http://localhost:8096
+              url: http://192.168.1.85:8096
               icon: si:jellyfin
             - title: JellyFindarr
-              url: http://localhost:5505
+              url: http://192.168.1.78:5505
               icon: si:joplin
             - title: qBittorrent
-              url: http://localhost:8080
+              url: http://192.168.1.85:8080
               icon: si:qbittorrent
             - title: Radarr
-              url: http://localhost:7878
+              url: http://192.168.1.85:7878
               icon: si:radarr
             - title: Sonarr
-              url: http://localhost:8989
+              url: http://192.168.1.85:8989
               icon: si:radarr
             - title: Lidarr
-              url: http://localhost:8686
-
+              url: http://192.168.1.85:8686
         - type: bookmarks
           groups:
             - title: Systems
               links:
-                - title: Text Gen Webui
-                  url: http://localhost:7860
                 - title: Arch Linux Launchpad
-                  url: http://localhost:9090
+                  url: http://192.168.1.227:9090
                 - title: Arch Desk Launchpad
-                  url: http://localhost:9090
-                - title: GitHub
-                  url: https://github.com/
+                  url: http://192.168.1.239:9090
+                - title: Raspberry4 Launchpad
+                  url: http://192.168.1.85:9090
             - title: Finance
               links:
                 - title: pyNance Dashroad
-                  url: http://localhost:3353
+                  url: http://192.168.1.239:3353
                 - title: CapitalOne
-                  url: https://capitalone.com/
+                  url: https:capitalone.com
                 - title: Fidelity
                   url: https://fidelity.com/
             - title: Other
@@ -58,4 +54,6 @@
                   url: https://github.com/
                 - title: ChatGPT
                   url: https://chatgpt.com/
+                - title: Text Gen Webui
+                  url: http://192.168.1.239:7860
 
